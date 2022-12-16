@@ -4,7 +4,7 @@ class Vehiculo:
         self.ruedas = ruedas
 
     def __str__(self):
-        return f'Vehiculo: Color: {self.color}, Ruedas: {self.ruedas}'
+        return f'Color: {self.color}, Ruedas: {self.ruedas}'
 
 class Coche(Vehiculo):
 
@@ -13,7 +13,7 @@ class Coche(Vehiculo):
         self.velocidad = velocidad
 
     def __str__(self):
-        return f'Coche: Velocidad: {self.velocidad}, {super().__str__()}'
+        return f'Coche-> Velocidad: {self.velocidad} (km/hr), {super().__str__()}'
 
 class Bicicleta(Vehiculo):
 
@@ -22,4 +22,4 @@ class Bicicleta(Vehiculo):
         self.tipo = tipo
 
     def __str__(self):
-        return f'Bicicleta: Tipo: {self.tipo}, {super().__str__()}'
+        return f'Bicicleta-> Tipo: {self.tipo}, {super().__str__()}'
