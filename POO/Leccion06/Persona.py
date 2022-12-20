@@ -2,9 +2,14 @@ class Persona:
 
     contador_personas = 0
 
+    # Mejora de codigo
+    @classmethod
+    def generar_siguiente_valor(cls):
+        cls.contador_personas += 1
+        return cls.contador_personas
+
     def __init__(self, nombre, apellido, edad):
-        Persona.contador_personas += 1
-        self.id_persona = Persona.contador_personas
+        self.id_persona = self.generar_siguiente_valor()
         self.nombre = nombre
         self.apellido = apellido
         self.edad = edad
