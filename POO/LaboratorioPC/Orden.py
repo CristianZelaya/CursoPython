@@ -22,4 +22,4 @@ class Orden:
         computadoras_str = ''
         for computadora in self._computadora:
             computadoras_str += computadora.__str__()
-        return f'ID: {self._id_orden} \n{computadoras_str}'
+        return f'Id: {self._id_orden} \n{computadoras_str}'
