@@ -3,3 +3,89 @@
 12:35:33 PM: WARNING [logger_base.py:15] Mensaje a nivel de warning
 12:35:33 PM: ERROR [logger_base.py:16] Mensaje a nivel de error
 12:35:33 PM: CRITICAL [logger_base.py:17] Mensaje a nivel critical
+06:10:02 PM: DEBUG [Persona.py:40] Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+06:16:04 PM: DEBUG [Persona.py:49] Nombre: Zelaya, Apellido: criszel94@gmail.com, Email: None
+06:16:48 PM: DEBUG [Persona.py:49] Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+06:17:04 PM: DEBUG [Persona.py:49] Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+07:50:21 PM: DEBUG [Persona.py:49] Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+07:56:58 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000002A85C15C260; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+07:57:53 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000002181CA4C260; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+07:57:53 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: c¿<cursor object at 0x000002181C76B060; closed: 0>
+07:58:18 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000001E23706C260; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+07:58:18 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x000001E236F7B060; closed: 0>
+08:18:57 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x00000142A065C150; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+08:18:57 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x00000142A037B680; closed: 0>
+08:18:57 PM: DEBUG [PersonaDao.py:33] Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+08:18:57 PM: DEBUG [PersonaDao.py:33] Nombre: Stefhani, Apellido: Gomez, Email: fany.gomez@gmail.com
+08:18:57 PM: DEBUG [PersonaDao.py:33] Nombre: Maryory, Apellido: LOpez, Email: lopez@gmail.com
+08:20:16 PM: DEBUG [Persona.py:49] ID: None Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+08:20:26 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x00000174E2D7C150; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+08:20:26 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x00000174E2A9B680; closed: 0>
+08:20:26 PM: DEBUG [PersonaDao.py:33] ID: 1 Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+08:20:26 PM: DEBUG [PersonaDao.py:33] ID: 2 Nombre: Stefhani, Apellido: Gomez, Email: fany.gomez@gmail.com
+08:20:26 PM: DEBUG [PersonaDao.py:33] ID: 4 Nombre: Maryory, Apellido: LOpez, Email: lopez@gmail.com
+08:30:30 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x00000204625AC370; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+08:30:30 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x00000204622CB680; closed: 0>
+08:30:30 PM: DEBUG [PersonaDao.py:35] Persona insertada: ID: None Nombre: Ana, Apellido: Ventura, Email: anv@gmail.com
+08:30:30 PM: DEBUG [PersonaDao.py:42] Perona insertada: 1
+08:32:11 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000002EED9D1C370; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+08:32:11 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x000002EED9A3B680; closed: 0>
+08:32:11 PM: DEBUG [PersonaDao.py:35] Persona insertada: ID: None Nombre: Ana, Apellido: Ventura, Email: anv@gmail.com
+08:32:11 PM: DEBUG [PersonaDao.py:42] Persona insertada: 1
+08:33:43 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000001C38394C370; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+08:33:43 PM: DEBUG [PersonaDao.py:36] Persona insertada: ID: None Nombre: Ana, Apellido: Ventura, Email: anv@gmail.com
+08:33:43 PM: DEBUG [PersonaDao.py:43] Persona insertada: 1
+08:33:43 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x000001C38366B060; closed: 0>
+08:33:43 PM: DEBUG [PersonaDao.py:48] ID: 1 Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+08:33:43 PM: DEBUG [PersonaDao.py:48] ID: 2 Nombre: Stefhani, Apellido: Gomez, Email: fany.gomez@gmail.com
+08:33:43 PM: DEBUG [PersonaDao.py:48] ID: 4 Nombre: Maryory, Apellido: LOpez, Email: lopez@gmail.com
+08:33:43 PM: DEBUG [PersonaDao.py:48] ID: 12 Nombre: Ana, Apellido: Ventura, Email: anv@gmail.com
+08:36:16 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000001EFEA7CC370; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+08:36:16 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x000001EFEA4EB060; closed: 0>
+08:36:16 PM: DEBUG [PersonaDao.py:38] Persona insertada: ID: None Nombre: Ana, Apellido: Ventura, Email: anv@gmail.com
+08:36:16 PM: DEBUG [PersonaDao.py:48] Persona insertada: 1
+08:37:21 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x00000263475AC370; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+08:37:21 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x000002634728B060; closed: 0>
+08:37:21 PM: DEBUG [PersonaDao.py:42] Persona insertada: ID: None Nombre: Ana, Apellido: Ventura, Email: anv@gmail.com
+08:37:21 PM: DEBUG [PersonaDao.py:52] Persona insertada: 1
+08:37:21 PM: ERROR [PersonaDao.py:33] Ocurrio un error: 'NoneType' object does not support the context manager protocol
+08:38:40 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000001F7B72FC370; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+08:38:40 PM: DEBUG [PersonaDao.py:43] Persona insertada: ID: None Nombre: Rosalio, Apellido: Zelaya, Email: rzelaya@gmail.com
+08:38:40 PM: DEBUG [PersonaDao.py:53] Persona insertada: 1
+08:38:40 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x000001F7B6FEB060; closed: 0>
+08:38:40 PM: DEBUG [PersonaDao.py:58] ID: 1 Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+08:38:40 PM: DEBUG [PersonaDao.py:58] ID: 2 Nombre: Stefhani, Apellido: Gomez, Email: fany.gomez@gmail.com
+08:38:40 PM: DEBUG [PersonaDao.py:58] ID: 4 Nombre: Maryory, Apellido: LOpez, Email: lopez@gmail.com
+08:38:40 PM: DEBUG [PersonaDao.py:58] ID: 12 Nombre: Ana, Apellido: Ventura, Email: anv@gmail.com
+08:38:40 PM: DEBUG [PersonaDao.py:58] ID: 15 Nombre: Rosalio, Apellido: Zelaya, Email: rzelaya@gmail.com
+08:53:52 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000001E421F4C260; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+08:53:52 PM: DEBUG [PersonaDao.py:56] Persona actualizada: ID: 15 Nombre: Arnulfo, Apellido: Romero, Email: ar@gmail.com
+08:53:52 PM: DEBUG [PersonaDao.py:71] Persona actualizada: 1
+08:53:52 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x000001E421C2B060; closed: 0>
+08:53:52 PM: DEBUG [PersonaDao.py:76] ID: 1 Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+08:53:52 PM: DEBUG [PersonaDao.py:76] ID: 2 Nombre: Stefhani, Apellido: Gomez, Email: fany.gomez@gmail.com
+08:53:52 PM: DEBUG [PersonaDao.py:76] ID: 4 Nombre: Maryory, Apellido: LOpez, Email: lopez@gmail.com
+08:53:52 PM: DEBUG [PersonaDao.py:76] ID: 12 Nombre: Ana, Apellido: Ventura, Email: anv@gmail.com
+08:53:52 PM: DEBUG [PersonaDao.py:76] ID: 15 Nombre: Arnulfo, Apellido: Romero, Email: ar@gmail.com
+09:01:56 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000001DFA5D8C260; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+09:01:56 PM: ERROR [PersonaDao.py:71] Ocurrio un error: 'Persona' object does not support indexing
+09:03:09 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000002291B8E0260; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+09:03:09 PM: ERROR [PersonaDao.py:72] Ocurrio un error: 'int' object does not support indexing
+09:04:31 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x0000027F92550260; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+09:04:31 PM: ERROR [PersonaDao.py:72] Ocurrio un error: 'int' object does not support indexing
+09:05:10 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x00000250975E0260; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+09:05:10 PM: DEBUG [PersonaDao.py:69] Persona eliminada: <built-in function id>
+09:05:10 PM: DEBUG [PersonaDao.py:89] Persona eliminada: 1
+09:05:10 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x00000250972EB060; closed: 0>
+09:05:10 PM: DEBUG [PersonaDao.py:94] ID: 1 Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+09:05:10 PM: DEBUG [PersonaDao.py:94] ID: 2 Nombre: Stefhani, Apellido: Gomez, Email: fany.gomez@gmail.com
+09:05:10 PM: DEBUG [PersonaDao.py:94] ID: 4 Nombre: Maryory, Apellido: LOpez, Email: lopez@gmail.com
+09:05:10 PM: DEBUG [PersonaDao.py:94] ID: 12 Nombre: Ana, Apellido: Ventura, Email: anv@gmail.com
+09:08:27 PM: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x00000253270D0260; dsn: 'user=postgres password=xxx dbname=test_db host=localhost port=5432', closed: 0>
+09:08:27 PM: DEBUG [PersonaDao.py:69] Persona eliminada: ID: 15 Nombre: None, Apellido: None, Email: None
+09:08:27 PM: DEBUG [PersonaDao.py:89] Persona eliminada: 1
+09:08:27 PM: DEBUG [Conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x0000025326DEB060; closed: 0>
+09:08:27 PM: DEBUG [PersonaDao.py:94] ID: 1 Nombre: Cristian, Apellido: Zelaya, Email: criszel94@gmail.com
+09:08:27 PM: DEBUG [PersonaDao.py:94] ID: 2 Nombre: Stefhani, Apellido: Gomez, Email: fany.gomez@gmail.com
+09:08:27 PM: DEBUG [PersonaDao.py:94] ID: 4 Nombre: Maryory, Apellido: LOpez, Email: lopez@gmail.com
+09:08:27 PM: DEBUG [PersonaDao.py:94] ID: 12 Nombre: Ana, Apellido: Ventura, Email: anv@gmail.com
