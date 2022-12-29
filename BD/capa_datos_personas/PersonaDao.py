@@ -1,5 +1,6 @@
 import sys
 
+from Cursor_del_pool import CursorDelPool
 from logger_base import log
 
 from Conexion import Conexion
@@ -21,7 +22,7 @@ class PersonaDao:
     @classmethod
     def seleccionar(cls):
         try:
-            with Conexion.obtenerCursor() as cursor:
+            with CursorDelPool() as cursor:
                 cursor.execute(cls._SELECT)
                 registros = cursor.fetchall()
                 personas = []
@@ -36,12 +37,11 @@ class PersonaDao:
     @classmethod
     def insertar(cls, persona):
         try:
-            with Conexion.obtenerConexion() as conexion:
-                with conexion.cursor() as cursor:
-                    valores = (persona.nombre, persona.apellido, persona.email)
-                    cursor.execute(cls._INSERT, valores)
-                    log.debug(f'Persona insertada: {persona}')
-                    return cursor.rowcount
+            with CursorDelPool() as cursor:
+                valores = (persona.nombre, persona.apellido, persona.email)
+                cursor.execute(cls._INSERT, valores)
+                log.debug(f'Persona insertada: {persona}')
+                return cursor.rowcount
         except Exception as e:
             log.error(f'Ocurrio un error {e}')
             sys.exit()
@@ -49,12 +49,11 @@ class PersonaDao:
     @classmethod
     def actualizar(cls, persona):
         try:
-            with Conexion.obtenerConexion() as conexion:
-                with conexion.cursor() as cursor:
-                    valores = (persona.nombre, persona.apellido, persona.email, persona.id_persona)
-                    cursor.execute(cls._UPDATE, valores)
-                    log.debug(f'Persona actualizada: {persona}')
-                    return cursor.rowcount
+            with CursorDelPool() as cursor:
+                valores = (persona.nombre, persona.apellido, persona.email, persona.id_persona)
+                cursor.execute(cls._UPDATE, valores)
+                log.debug(f'Persona actualizada: {persona}')
+                return cursor.rowcount
         except Exception as e:
             log.error(f'Ocurrio un error {e}')
             sys.exit()
@@ -62,30 +61,29 @@ class PersonaDao:
     @classmethod
     def eliminar(cls, persona):
         try:
-            with Conexion.obtenerConexion() as conexion:
-                with conexion.cursor() as cursor:
-                    valor = (persona.id_persona,)
-                    cursor.execute(cls._DELETE, valor)
-                    log.debug(f'Persona eliminada: {persona}')
-                    return cursor.rowcount
+            with CursorDelPool() as cursor:
+                valor = (persona.id_persona,)
+                cursor.execute(cls._DELETE, valor)
+                log.debug(f'Persona eliminada: {persona}')
+                return cursor.rowcount
         except Exception as e:
             log.error(f'Ocurrio un error: {e}')
             sys.exit()
 
 if __name__ == '__main__':
     # Insertar un registro
-    # persona1 = Persona(nombre='Rosalio', apellido='Zelaya', email='rzelaya@gmail.com')
-    # persona_insertada = PersonaDao.insertar(persona1)
-    # log.debug(f'Persona insertada: {persona_insertada}')
+    persona1 = Persona(nombre='David', apellido='Zelaya', email='david@gmail.com')
+    persona_insertada = PersonaDao.insertar(persona1)
+    log.debug(f'Persona insertada: {persona_insertada}')
 
     # Actualizar un registro
-    # persona1 = Persona(15, 'Arnulfo', 'Romero', 'ar@gmail.com')
-    # persona_actualizada = PersonaDao.actualizar(persona1)
-    # log.debug(f'Persona actualizada: {persona_actualizada}')
+    persona2 = Persona(16, 'Rosali', 'Romero', 'rsa@gmail.com')
+    persona_actualizada = PersonaDao.actualizar(persona2)
+    log.debug(f'Persona actualizada: {persona_actualizada}')
 
-    #Eliminar un registro
-    persona1 = Persona(id_persona=15)
-    persona_eliminada = PersonaDao.eliminar(persona1)
+    # Eliminar un registro
+    persona3 = Persona(id_persona=17)
+    persona_eliminada = PersonaDao.eliminar(persona3)
     log.debug(f'Persona eliminada: {persona_eliminada}')
 
     # Seleccionar objetos
